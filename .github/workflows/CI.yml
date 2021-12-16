@@ -19,7 +19,7 @@ jobs:
       fail-fast: false
       matrix:
         os: [ubuntu-latest, macos-10.15, macos-11]
-        python-version: [3.8, 3.9, 3.10]
+        python-version: ["3.8", "3.9", "3.10"]
     env:
       OE_LICENSE: ${{ github.workspace }}/oe_license.txt
 
@@ -28,7 +28,7 @@ jobs:
 
     - uses: conda-incubator/setup-miniconda@v2.1.1
       with:
-        python-version: ${{ matrix.python-version }}
+        python-version: "${{ matrix.python-version }}"
         environment-file: devtools/conda-envs/test_env.yaml
         activate-environment: test
         auto-activate-base: false
