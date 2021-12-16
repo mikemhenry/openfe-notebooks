@@ -2,6 +2,7 @@ name: openfe-notebooks
 channels:
   - conda-forge
   - openeye
+  - bioconda
 dependencies:
   - python
   - pip
