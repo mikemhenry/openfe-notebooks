@@ -14,6 +14,7 @@ dependencies:
   - openff-toolkit >=0.10.0
   - openff-utilities
   - openff-units
+  - openff-interchange
   # Optional features
   - jax
   - unyt
