@@ -1,0 +1,34 @@
+name: openfe-notebooks
+channels:
+  - conda-forge
+  - bioconda
+dependencies:
+  - python
+  - pip
+  - numpy
+  - pydantic
+  - openmm
+  - mdtraj
+  # OpenFF stack
+  - openff-toolkit >=0.10.0
+  - openff-utilities
+  - openff-units
+  - openff-interchange
+  # Optional features
+  - jax
+  - unyt
+  - mbuild
+  - foyer >=0.8.1
+  # Testing
+  - intermol
+  - openff-evaluator
+  - openff-recharge
+  - pytest
+  - pytest-xdist
+  - nbval
+  - conda
+  - nglview
+  # Drivers
+  - gromacs >=2021
+  - lammps
+  - panedr
